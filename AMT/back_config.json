@@ -1,0 +1,34 @@
+//back end config
+{
+    "version": "version1",
+    "port": 5000,
+    "maintenance": false,
+
+// directories that would have to be set depending on how you are configuring exp
+    "sequenceDir": "../sequences/sequenceFiles",
+    "previewSequenceFile": "../sequences/sequenceFiles/previewSequence.json",
+    "assignedSequencesFile": "../data/assignedSequences.csv",
+    "dataFile": "../data/data.csv",
+    "dataSandboxFile":"../data/data_sandbox.csv",
+    "submitFile": "../data/submittedRuns.csv",
+    "dashboardFile":"../data/dashboard.json",
+
+    "maxNumRuns": 4,
+
+    "whitelistWorkerIds": [],
+
+//**ASK** what dodes this set do? 
+    "blockingCriteria": {
+        "vigHrCriterion": 0.60,
+        "farCriterion": 0.40
+    },
+
+//**ASK** condition labels: does this label trials? So in my case I would just label the image pair combo? No difference in terms of type of image 
+    "conditionLabels":
+    {
+        "repeatTrials": ["vig repeat", "target repeat"],
+        "vigRepeatTrials": ["vig repeat"],
+        "noRepeatTrials":["filler", "target", "vig"]
+    }
+
+}

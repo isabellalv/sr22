@@ -1,0 +1,29 @@
+//front end config
+   
+{
+    "header": {
+        "title": "Memory Game", //change to visual perception simialirity game
+        "requester": "Contact: [email]" //make this serre lab email 
+    },
+    "game_settings": {
+        "fixation": "fixation.png",
+        "sorry":"sorry.jpg", //is this a where certain image would go? or is this just testing for something? 
+        "imageDuration": 600,
+        "fixationDuration":800,
+        "trialFeedback":true,
+        "goTrials": ["target repeat", "vig repeat"],
+        "responseKeyCode": 82,
+        "reward": {
+            "amount": 0.5, // this is where I would put the cost for each HIT/image? 
+            "currency": "USD"
+        }
+    },
+    //what is this part? is this the part where I input it to mturk?
+    "images":{"baseUrl":"http://localhost:8000/"},
+
+    "serverUrl": "http://127.0.0.1:5000/",
+
+    "debugMode": {
+        "numTrials": 10
+    }
+}
